@@ -13,7 +13,7 @@ The following code is an example of how to add some tests to an ament package:
       ament_lint_auto_find_test_dependencies()
 
       # Add a gtest named ${PROJECT_NAME}_my_test
-      ament_cmake_gtest(${PROJECT_NAME}_my_test test/my_test.cpp)
+      ament_add_gtest(${PROJECT_NAME}_my_test test/my_test.cpp)
 
       # Add a nose test named ${PROJECT_NAME}_my_nose_tests
       find_package(ament_cmake_nose REQUIRED)
